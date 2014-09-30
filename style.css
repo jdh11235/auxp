@@ -1,6 +1,8 @@
 
 body {
-	background-color: #00cc99; /* Caribbian Green */
+	background-color: black;
+	color: #00cc99; /* Caribbian Green */
+	font-family: sans-serif;
 }
 
 div {
