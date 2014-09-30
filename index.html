@@ -5,8 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Audio Experiments</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="audiosynth.js"></script>
+	<script src="util.js"></script>
+
+	<script src="music/serialist_chromatic_octave.js"></script>
 </head>
 <body>
+	<button onclick="location.reload()">Reset</button>
 
+	<div>
+		<p>Serialist Chromatic Octave</p>
+		<button onclick="serialist_chromatic_octave.start(250)">start</button>
+		<button onclick="serialist_chromatic_octave.stop = true">stop</button>
+	</div>
 </body>
 </html>
