@@ -10,7 +10,8 @@ var serialist_chromatic_octave = {
 	},
 
 	pattern: function(speed) {
-		var remaining_notes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+		var remaining_notes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+		//c to c, chromatic scale
 
 		function randomNote() {
 			if (remaining_notes[0] !== undefined) {
