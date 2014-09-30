@@ -8,6 +8,7 @@ var serialist_chromatic_octave = {
 	playNote: function(note) {
 		var note_display = document.getElementById('serialist_chromatic_octave-note_display');
 		note_display.innerHTML = note_display.innerHTML + ' ' + note;
+		//TODO: convert display from note number to note names
 		//TODO: interface with audiosynth.js
 	},
 
