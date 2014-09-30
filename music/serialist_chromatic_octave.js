@@ -1,8 +1,11 @@
 var serialist_chromatic_octave = {
 	start: function(speed) {
-		this.stop = false;
-		this.speed = speed;
-		this.pattern();
+		if (!serialist_chromatic_octave.running) {
+			serialist_chromatic_octave.stop = false;
+			serialist_chromatic_octave.running = true;
+			serialist_chromatic_octave.speed = speed;
+			serialist_chromatic_octave.pattern();
+		}
 	},
 
 	playNote: function(note) {
@@ -27,11 +30,12 @@ var serialist_chromatic_octave = {
 
 				remaining_notes.splice(pos, 1);
 				setTimeout(randomNote, serialist_chromatic_octave.speed);
-			} else if (!serialist_chromatic_octave.stop) {
+			} else if (!serialist_chromatic_octave.stop) { //restart
 				note_display.innerHTML = '';
 				serialist_chromatic_octave.pattern();
-			} else {
+			} else { //stop
 				note_display.innerHTML = '';
+				serialist_chromatic_octave.running = false;
 			}
 		}
 
