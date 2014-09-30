@@ -1,3 +1,7 @@
+/* global setTimeout */
+/* global document */
+/* global Synth */
+
 var serialist_chromatic_octave = {
 	start: function(speed) {
 		if (!serialist_chromatic_octave.running) {
@@ -7,6 +11,8 @@ var serialist_chromatic_octave = {
 			serialist_chromatic_octave.pattern();
 		}
 	},
+
+	instrument: Synth.createInstrument('piano'),
 
 	playNote: function(note) {
 		var note_display = document.getElementById('serialist_chromatic_octave-note_display');
