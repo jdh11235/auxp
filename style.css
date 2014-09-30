@@ -39,6 +39,18 @@ span {
 
 #footer a {
 	background-color: orange;
-	color: #2d3032;
+	color: #2d3032; /* Brackets Window Frame */
 	padding: 0.75em;
+}
+
+h1 {
+	color: orange;
+}
+
+#header a {
+	color: #00cc99; /* Caribbian Green */
+}
+
+#header a:hover {
+	color: white;
 }

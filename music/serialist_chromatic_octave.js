@@ -14,8 +14,7 @@ var serialist_chromatic_octave = {
 
 	pattern: function() {
 		var note_display = document.getElementById('serialist_chromatic_octave-note_display');
-		var remaining_notes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-		//c to b, chromatic scale
+		var remaining_notes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; //c# to b, chromatic scale
 
 		function randomNote() {
 			if (remaining_notes[0] !== undefined) {
@@ -34,7 +33,7 @@ var serialist_chromatic_octave = {
 			}
 		}
 
-		serialist_chromatic_octave.playNote(0);
+		serialist_chromatic_octave.playNote(0); //starting c
 		setTimeout(randomNote, serialist_chromatic_octave.speed);
 	}
 };

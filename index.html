@@ -12,7 +12,14 @@
 	<script src="music/serialist_chromatic_octave.js"></script>
 </head>
 <body>
-	<center><p><i>This page uses HTML5 audio, turn up your volume!</i></p></center>
+	<center id="header">
+		<h1>
+			Audio Experiments
+			<br>
+			(<a href="http://git.io/auxp">git.io/auxp</a>)
+		</h1>
+		<p><i>This page uses HTML5 audio, turn up your volume!</i></p>
+	</center>
 
 	<div id="serialist_chromatic_octave">
 		<b>Serialist Chromatic Octave</b>
@@ -21,7 +28,7 @@
 		<button onclick="serialist_chromatic_octave.stop = true">Stop</button>
 		<span id="serialist_chromatic_octave-note_display"></span>
 		<br>
-		There are <code>12 factorial</code> or <code>479,001,600</code> possible arrangements of a one-octave (12 note) chromatic scale.
+		There are <code>12 factorial</code> or <code>479,001,600</code> possible arrangements of the 12 notes in a one-octave chromatic scale.
 	</div>
 
 	<!-- github link -->
