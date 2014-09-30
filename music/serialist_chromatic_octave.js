@@ -1,5 +1,6 @@
 var serialist_chromatic_octave = {
 	start: function(speed) {
+		this.stop = false;
 		this.pattern(speed);
 	},
 
@@ -20,9 +21,7 @@ var serialist_chromatic_octave = {
 
 				remaining_notes.splice(pos, 1);
 				setTimeout(randomNote, speed);
-			} else if (serialist_chromatic_octave.stop) {
-				serialist_chromatic_octave.stop = false;
-			} else {
+			} else if (!serialist_chromatic_octave.stop) {
 				setTimeout(serialist_chromatic_octave.pattern, speed); //bug
 			}
 		}
