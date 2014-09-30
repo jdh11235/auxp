@@ -5,6 +5,7 @@ body {
 	font-family: sans-serif;
 	margin: 0em;
 	padding: 0em;
+	padding-bottom: 10em;
 }
 
 div {
@@ -13,7 +14,16 @@ div {
 	margin: 0.5em;
 }
 
+p {
+	padding: 0.5em;
+}
+
+span {
+	color: orange;
+}
+
 #footer {
+	background-color: inherit;
 	border: none;
 	text-align: center;
 	position: fixed;
