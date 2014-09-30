@@ -18,10 +18,6 @@ p {
 	padding: 0.5em;
 }
 
-code {
-/*	color: white;*/
-}
-
 span {
 	color: orange;
 }
@@ -51,6 +47,7 @@ h1 {
 	color: #00cc99; /* Caribbian Green */
 }
 
-#header a:hover {
-	color: white;
+#header p {
+	color: #2d3032; /* Brackets Window Frame */
+	background-color: white;
 }
