@@ -60,4 +60,6 @@ var serialist_chromatic_octave = {
 };
 
 //preload hack to prevent skipping
+Synth.setVolume(0.0);
 serialist_chromatic_octave.instrument.play('C', 4, 1);
+Synth.setVolume(1.0);
