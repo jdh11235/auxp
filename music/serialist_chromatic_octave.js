@@ -25,7 +25,7 @@ var serialist_chromatic_octave = {
 
 	pattern: function() {
 		var note_display = document.getElementById('serialist_chromatic_octave-note_display');
-		var remaining_notes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; //c# to b, chromatic scale
+		var remaining_notes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; //chromatic range, C# to B
 
 		function end() {
 			serialist_chromatic_octave.playNote(0);
@@ -54,7 +54,10 @@ var serialist_chromatic_octave = {
 			}
 		}
 
-		serialist_chromatic_octave.playNote(0); //starting c
+		serialist_chromatic_octave.playNote(0); //start with C
 		setTimeout(randomNote, serialist_chromatic_octave.speed);
 	}
 };
+
+//hack to prevent skipping
+serialist_chromatic_octave.instrument.play('C', 4, 1);
