@@ -32,11 +32,22 @@
 		<br>
 		<button onclick="serialist_chromatic_octave.start(250)">Play</button>
 		<button onclick="serialist_chromatic_octave.stop = true">Stop</button>
-		<span id="serialist_chromatic_octave-note_display"></span>
+		<br>
+		<span class="display" id="serialist_chromatic_octave-note_display"></span>
 		<br>
 		Seralism is a method of composing based on patterns. In this example, all the notes in a range must be played exactly once before they can be played again.
 		<br>&nbsp;<br>
-		There are <code>11 factorial</code> or <code>39,916,800</code> possible arrangements of the 12 notes in a one-octave chromatic scale (if always starting on the same note).
+		There are <i>11 factorial</i> or <i>39,916,800</i> possible arrangements of the 12 notes in a one-octave chromatic scale (always starting on the same note); if you listened through all of them, you would be here until <i id="serialist_chromatic_octave-time_left"></i>.
+
+		<script>
+			(function(){
+				var elm = document.getElementById('serialist_chromatic_octave-time_left');
+				var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+				var d = new Date();
+				d.setSeconds(d.getSeconds() + (39916800 * 3) );
+				elm.innerHTML = months[d.getMonth()] + '&nbsp;' + d.getDay() + '&nbsp;' + d.getFullYear();
+			})();
+		</script>
 	</div>
 
 	<!-- github link -->
