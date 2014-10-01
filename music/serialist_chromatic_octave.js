@@ -50,7 +50,7 @@ var serialist_chromatic_octave = {
 			} else if (!serialist_chromatic_octave.stop) {
 				restart();
 			} else {
-				setTimeout(end, serialist_chromatic_octave.speed);
+				end();
 			}
 		}
 
@@ -59,5 +59,5 @@ var serialist_chromatic_octave = {
 	}
 };
 
-//hack to prevent skipping
+//preload hack to prevent skipping
 serialist_chromatic_octave.instrument.play('C', 4, 1);
