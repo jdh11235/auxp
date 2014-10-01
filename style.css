@@ -47,9 +47,13 @@ h1 {
 	color: #00cc99; /* Caribbian Green */
 }
 
-#header p {
+p.info {
 	color: #2d3032; /* Brackets Window Frame */
 	background-color: white;
+}
+
+p.note {
+	color: orange;
 }
 
 #footer b {
