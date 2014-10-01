@@ -33,11 +33,11 @@ span.display {
 	padding: 0.75em 0em;
 }
 
-a.email {
+a.name {
 	color: white;
 }
 
-a.email:hover {
+a.name:hover {
 	color: #00cc99; /* Caribbian Green */
 }
 
