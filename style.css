@@ -33,7 +33,15 @@ span.display {
 	padding: 0.75em 0em;
 }
 
-#footer a {
+a.email {
+	color: white;
+}
+
+a.email:hover {
+	color: #00cc99; /* Caribbian Green */
+}
+
+a.tab {
 	background-color: orange;
 	color: #2d3032; /* Brackets Window Frame */
 	padding: 0.75em;
